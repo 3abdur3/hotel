@@ -62,6 +62,9 @@
 #main-footer .social a{
   margin: 0 5px;
 }
+#main-footer .social i{
+  font-size: 18px;
+}
 
 /* ----SECTION-testimonial---- */
 /* #testimonials .testimonial p{
