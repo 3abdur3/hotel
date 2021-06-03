@@ -1,0 +1,255 @@
+/* ----Google-fonts---- */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #fff;
+  color: #333;
+  line-height: 1.6;
+  /* without units, will multiply the font-size of the element */
+}
+p {
+  margin: 10px 0;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* UTILITY classes: we can use this style in other pages as like FRAMEWORK */
+.container {
+  max-width: 1170px;
+  margin: auto;
+  padding: 0 20px;
+  overflow: auto;
+  /* The auto value is similar to scroll and it adds scroll-bars only when necessary */
+}
+.text-primary{
+  color: #FFA500;
+}
+.btn{
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  padding: 15px 20px;
+  font-size: 18px;
+  border: none; /* By default BUTTON has border */
+  cursor: pointer;
+}
+.btn:hover {
+  background: #FFA500;
+  color: black;
+}
+.btn-light {
+  background: #f4f4f4;
+  color: #333;
+}
+.bg-dark{
+  background: #333;
+  color: #fff;
+}
+.bg-grey{
+  background: #444;
+  color: #fff;
+}
+.bg-primary{
+  background: #FFA500;
+  color: #333;
+}
+.bg-light{
+  background: #f4f4f4;
+  color: #333;
+}
+
+/* -----NAVBAR----- */
+#navbar {
+  background: #333;
+  color: #fff;
+  overflow: auto;
+}
+#navbar .logo {
+  float: left;
+  padding-top: 20px;
+}
+#navbar ul {
+  float: right;
+  list-style: none;
+}
+#navbar ul li {
+  float: left;
+}
+#navbar ul li a{
+  display: block;
+  padding: 20px;
+  /* Because surrounding LOGO also we created 20px padding */
+  text-align: center;
+}
+#navbar ul li a:hover, #navbar ul li .current{
+  background: #444;
+  color: #FFA500;
+}
+#home{
+  background: url('../images/home.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.8;
+  height: 600px;
+}
+#home .home-content{
+  text-align: center;
+  padding-top: 170px;
+  color: #fff;
+}
+#home .home-content h1{
+  font-size: 60px;
+}
+#home .home-content p{
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+/* -----SECTION-1----- */
+#history {
+  height: 400px;
+}
+#history .history-image{
+  float: left;
+  height: 100%;
+  width: 50%;
+  background: url('../images/photo-2.jpg') no-repeat;
+  background-size: cover;
+}
+#history .history-info{
+  float: right;
+  height: 100%;
+  width: 50%;
+  text-align: center;
+  padding: 50px 30px;
+  overflow: hidden;
+}
+#history .history-info p{
+  padding-bottom: 30px;
+}
+/* --------SECTION-2------ */
+.box{
+  float: left;
+  width: 33.3%;
+  padding: 50px;
+  text-align: center;
+}
+.box i{
+  margin-bottom: 10px;
+}
+.box h3{
+  padding-bottom: 10px;
+}
+#features{
+  overflow: hidden;
+}
+/* ----SECTION-about--- */
+#about .info-left{
+  float: left;
+  width: 50%;
+  height: 100%;
+  margin-top: 20px;
+  /* overflow: hidden; */
+}
+#about .info-left h1{
+  font-size: 40px;
+}
+#about .info-right{
+  float: right;
+  width: 50%;
+  height: 80%;
+  margin-top: 20px;
+  /* overflow: hidden; */
+}
+#about .info-right img{
+  display: block;
+  width: 80%;
+  margin: auto;
+  border-radius: 50%;
+}
+/* -----SECTION-testimonial---- */
+#testimonials{
+  background: url('../images/photo-6.jpg') no-repeat;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.8;
+  padding-top: 100px;
+}
+#testimonials h2{
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+  padding-bottom: 40px;
+}
+#testimonials .testimonial{
+  padding: 20px;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  opacity: 0.9;
+}
+#testimonials .testimonial img{
+  float: left;
+  width: 80px;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+/* -----SECTION-contact---- */
+#contact-form{
+  padding: 30px 0;
+}
+#contact-form .form-group{
+  margin-bottom: 30px;
+}
+#contact-form label{
+  display: block;
+  margin-bottom: 5px;
+}
+#contact-form input, #contact-form textarea{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+#contact-form input:focus, #contact-form textarea:focus{
+  border-color: #FFA500;
+  outline: none;
+}
+/* -----SECTION-contact-icons---- */
+#contact-info .extras:hover{
+  cursor: pointer;
+  background: #FFA500;
+  opacity: 0.5;
+}
+/* ------FOOTER---- */
+#main-footer{
+  padding: 20px;
+  text-align: center;
+  overflow: hidden;
+}
+#main-footer .copyright{
+  float: left;
+  width: 50%;
+  opacity: 0.5;
+}
+#main-footer .social{
+  width: 50%;
+  float: right;
+}
+#main-footer .social a{
+  margin: 0 10px;
+}
+#main-footer .social i:hover{
+  color: #FFA500;
+}
